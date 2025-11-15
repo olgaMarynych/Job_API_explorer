@@ -42,7 +42,8 @@ def top(n: int):
         empresa = t.get("company", {}).get("name", "Empresa desconhecida")
         titulo = t.get("title", "Sem título")
         data_publicacao = t.get("publishedAt", "")
-        lista_titulos.append({"Oferta de emprego": titulo, "Empresa": empresa, "Data da publicação": data_publicacao})
+        id=t.get("id","")
+        lista_titulos.append({"ID da oferta": id, "Oferta de emprego": titulo, "Empresa": empresa, "Data da publicação": data_publicacao})
 
     print(json.dumps(lista_titulos, indent=4, ensure_ascii=False))
 
