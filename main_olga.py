@@ -167,10 +167,11 @@ def contar_skills(data_inicial: str, data_final: str):
             if rgx.search(corpo):
                 contador[skill] = contador.get(skill, 0) + 1
 
-    if contador:
-        print(json.dumps(contador, indent=4, ensure_ascii=False))
-    else:
-        typer.echo("Nenhuma skill encontrada no intervalo de datas indicado.")
+    # --- NOVO: ordenar resultados por número de ocorrências (decrescente)
+    contador_ordenado = dict(sorted(contador.items(), key=lambda x: x[1], reverse=True))
+
+    # --- NOVO: devolver no formato pretendido (lista com um dicionário)
+    print(json.dumps([contador_ordenado], indent=4, ensure_ascii=False))
 
 if __name__ == "__main__":
     app()
