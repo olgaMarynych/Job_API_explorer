@@ -3,6 +3,7 @@ import requests
 import json
 import re
 from datetime import datetime
+import csv
 
 app = typer.Typer()
 
@@ -25,8 +26,12 @@ def dump():
 
 
 #-----------------------------------------------------------------------------------------------------------------------------------
-@app.command(name="top")  #n empregos mais recentes publicados no site
-def top(n: int):
+@app.command(name="top")
+def top(
+    n: int = typer.Argument(..., help="Número de empregos a listar"),
+    csv_file: str = typer.Option(None, "--csv", "-c", help="Nome do ficheiro CSV para exportar")
+):
+    """Lista os N trabalhos mais recentes e opcionalmente exporta para CSV"""
     try:
         with open("empregos.json", "r", encoding="utf-8") as f:
             conteudo = json.load(f)
@@ -42,10 +47,33 @@ def top(n: int):
         empresa = t.get("company", {}).get("name", "Empresa desconhecida")
         titulo = t.get("title", "Sem título")
         data_publicacao = t.get("publishedAt", "")
-        id=t.get("id","")
-        lista_titulos.append({"ID da oferta": id, "Oferta de emprego": titulo, "Empresa": empresa, "Data da publicação": data_publicacao})
+        descricao = t.get("body", "")
+        salario = t.get("salary", "")
+        localizacao = t.get("location", "")
+        id = t.get("id", "")
 
+        item = {
+            "ID da oferta": id,
+            "Oferta de emprego": titulo,
+            "Empresa": empresa,
+            "Data da publicação": data_publicacao,
+            "Descrição": descricao,
+            "Salário": salario,
+            "Localização": localizacao
+        }
+        lista_titulos.append(item)
+
+    # JSON para o terminal
     print(json.dumps(lista_titulos, indent=4, ensure_ascii=False))
+
+    # Exportar CSV se for indicado
+    if csv_file:
+        with open(csv_file, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=["Oferta de emprego", "Empresa", "Descrição", "Data da publicação", "Salário", "Localização"])
+            writer.writeheader()
+            for item in lista_titulos:
+                writer.writerow({k: item[k] for k in writer.fieldnames})
+        typer.echo(f"CSV exportado com sucesso para '{csv_file}'")
 
 #------------------------------------------------------------------------------------------------------------------------------------
 
