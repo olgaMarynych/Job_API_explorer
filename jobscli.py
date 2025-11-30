@@ -7,51 +7,88 @@ import csv
 
 app = typer.Typer()
 
+# -------------------------------------------------------------------------------
+# Subcomando statistics
+statistics_app = typer.Typer()
+app.add_typer(statistics_app, name="statistics")
+
+@statistics_app.command(name="zone")
+def statistics_zone(csv_file: str = typer.Option("statistics_zone.csv", "--csv", "-c", help="Nome do ficheiro CSV de saída")):
+    """
+    Contagem de vagas por região (zona) e tipo/nome da posição.
+    Gera ficheiro CSV com colunas: Zona, Tipo de Trabalho, Nº de vagas
+    """
+    try:
+        with open("empregos.json", "r", encoding="utf-8") as f:
+            conteudo = json.load(f)
+    except FileNotFoundError:
+        typer.echo("Ficheiro 'empregos.json' não encontrado. Faz primeiro o dump da API.")
+        raise typer.Exit(code=1)
+
+    trabalhos = conteudo.get("results", [])
+    contador = {}
+
+    for t in trabalhos:
+        locations = t.get("locations", [])
+        zonas = [loc.get("name", "Desconhecida") for loc in locations] or ["Desconhecida"]
+        tipo = t.get("title", "Não especificado")
+        for zona in zonas:
+            key = (zona, tipo)
+            contador[key] = contador.get(key, 0) + 1
+
+    lista_csv = [{"Zona": z, "Tipo de Trabalho": t, "Nº de vagas": n} for (z, t), n in contador.items()]
+    lista_csv.sort(key=lambda x: (x["Zona"], x["Tipo de Trabalho"]))
+
+    with open(csv_file, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["Zona", "Tipo de Trabalho", "Nº de vagas"])
+        writer.writeheader()
+        writer.writerows(lista_csv)
+
+    typer.echo(f"Ficheiro de exportação '{csv_file}' criado com sucesso!")
+
+# -------------------------------------------------------------------------------
+# Configurações da API
 url = "https://api.itjobs.pt/job/list.json"
 user_agent = {'User-agent': 'Mozilla/5.0'}
 api_key = "5ead20f487935ddbab9b3f084acdbf63"
 
-#------------------------------------------------------------------------------------------------------------------------------------
-@app.command(name="dump")  #cria/atualiza o ficheiro "empregos.json, para evitar requisições consecutivas à API e respetivo bloqueio"
+# -------------------------------------------------------------------------------
+@app.command(name="dump")
 def dump():
+    """Cria/atualiza o ficheiro empregos.json"""
     all_results = []
     page = 1
-    total_anuncios = 0
 
     try:
         while True:
             resposta = requests.get(url, headers=user_agent, params={
                 "api_key": api_key,
                 "page": page,
-                "limit": 100 #para cada página existe um limite de 100 anúncios
+                "limit": 100
             })
-            
             if resposta.status_code != 200:
                 typer.echo(f"Erro na requisição (página {page}): {resposta.status_code} - {resposta.reason}")
                 raise typer.Exit(code=1)
-            
+
             dados = resposta.json()
             results = dados.get("results", [])
-            
             if not results:
                 break
-            
+
             all_results.extend(results)
             page += 1
-        
-        #Guarda todos os resultados
+
         final_data = {"total": len(all_results), "results": all_results}
         with open("empregos.json", "w", encoding="utf-8") as f:
             json.dump(final_data, f, ensure_ascii=False, indent=4)
-        
-        typer.echo(f"Arquivo 'empregos.json' criado/atualizado com sucesso!") #como tem vários anúncios, o processo de criação/atualização é um bocado mais demorado
-        
+
+        typer.echo("Arquivo 'empregos.json' criado/atualizado com sucesso!")
+
     except Exception as e:
         typer.echo(f"Erro inesperado: {str(e)}")
         raise typer.Exit(code=1)
 
-
-#-----------------------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 @app.command(name="top")
 def top(
     n: int = typer.Argument(..., help="Número de empregos a listar"),
@@ -69,7 +106,7 @@ def top(
     recentes = trabalhos[:n]
 
     lista_csv = []
-    lista_terminal=[]
+    lista_terminal = []
     for t in recentes:
         empresa = t.get("company", {}).get("name", "Empresa desconhecida")
         titulo = t.get("title", "Sem título")
@@ -89,12 +126,10 @@ def top(
             "Localização": localizacao
         }
         lista_csv.append(item)
-        lista_terminal.append({"ID da oferta": id,"Oferta de emprego": titulo,"Empresa": empresa,"Data da publicação": data_publicacao})
+        lista_terminal.append({"ID da oferta": id, "Oferta de emprego": titulo, "Empresa": empresa, "Data da publicação": data_publicacao})
 
-    # JSON para o terminal
     print(json.dumps(lista_terminal, indent=4, ensure_ascii=False))
 
-    # Exportar CSV se for indicado
     if csv_file:
         with open(csv_file, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=["Oferta de emprego", "Empresa", "Descrição", "Data da publicação", "Salário", "Localização"])
@@ -103,8 +138,7 @@ def top(
                 writer.writerow({k: item[k] for k in writer.fieldnames})
         typer.echo(f"CSV exportado com sucesso para '{csv_file}'")
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+# -------------------------------------------------------------------------------
 @app.command(name="regime")
 def regime_trabalho(id: int = typer.Argument(..., help="ID do emprego")):
     url1 = "https://api.itjobs.pt/job/get.json"
@@ -127,118 +161,17 @@ def regime_trabalho(id: int = typer.Argument(..., help="ID do emprego")):
             typer.echo("Não identificado")
     else:
         print(f"Erro na requisição: {resposta.status_code} - {resposta.reason}")
-    
 
-#-------------------------------------------------------------------------------------------------------------------------------------------------------
-
-@app.command(name="procurar")  #comando intermédio para procurar descrições de anúncios com possível indicação de skills (nem todos os anúncios têm); 
-#serve como um filtro intermédio
-#a partir do resultado, criou-se uma lista de skills usada no comando seguinte (de contagem)
-def procurar_palavras():
-    try:
-        with open("empregos.json", "r", encoding="utf-8") as f:
-            conteudo = json.load(f)
-    except FileNotFoundError:
-        typer.echo("Ficheiro 'empregos.json' não encontrado. Faz primeiro o dump da API.")
-        raise typer.Exit(code=1)
-
-    trabalhos = conteudo.get("results", [])
-    padrao = re.compile(r"(experiência|conhecimentos|forte|valoriza|domínio|skills|experience|expertise|looking\s+for)", re.IGNORECASE)
-
-    encontrados = []
-
-    for t in trabalhos:
-        corpo = t.get("body", "")
-        if padrao.search(corpo):
-            encontrados.append(corpo)
-    if encontrados:
-        print(json.dumps(encontrados, indent=4, ensure_ascii=False))
-    else:
-        typer.echo("Nenhuma vaga com as palavras procuradas.")
-
-        
-#-----------------------------------------------------------------------------------------------------------------------------------------------------
-
-@app.command(name="skills")
-def contar_skills(data_inicial: str, data_final: str):
-    """Conta skills entre duas datas"""
-    try:
-        dt_ini = datetime.strptime(data_inicial, "%Y-%m-%d")
-        dt_fim = datetime.strptime(data_final, "%Y-%m-%d")
-    except ValueError:
-        typer.echo("Datas inválidas. Usa o formato YYYY-MM-DD.")
-        raise typer.Exit(code=1)
-
-    try:
-        with open("empregos.json", "r", encoding="utf-8") as f:
-            conteudo = json.load(f)
-    except FileNotFoundError:
-        typer.echo("Ficheiro 'empregos.json' não encontrado. Primeiro faz 'dump'.")
-        raise typer.Exit(code=1)
-
-    trabalhos = conteudo.get("results", [])
-    contador = {}
-
-    #lista deduzida a partir do resultado do comando anterior. Skills técnicas e comportamentais
-    lista_skills = ["Linux","Red Hat","CentOS","Ubuntu","Virtualização","Proxmox","Storage Networking","NAS","SAN","iSCSI","DNS","Mail","DHCP","LDAP",
-                    "Active Directory","SSL", "Scripting","Bash","Python","Apache","Nginx","Troubleshooting","Containers","Docker","Docker Swarm","Kubernetes",
-                    "Veeam Backup","Zabbix","Ethernet","Routing","NAT","IPSec VPN", "VLAN","Java","JavaScript","CI/CD","RESTful APIs","Microservices","Git",
-                    "SQL","MySQL","PostgreSQL","NoSQL","Redis","Django","Node.js", "iOS","Android","React Native","Mac OS","Ansible","Capistrano","Photoshop",
-                    "Figma","VBA","MS Access","SQL Server","PHP","PowerBI","Firewalls Checkpoint", "Cisco","IPv4","IPv6","IPSec","MPLS","VXLAN","TCP/IP",
-                    "Switching","Networking","Industry 4.0","MES software","Product Marketing","Frameworks","Workflows","Go-to-Market (GTM)","Connect IoT", 
-                    "Data Platform", "Messaging frameworks","Storytelling","Product positioning","Messaging architectures","GTM playbooks",
-                    "Competitive battlecards","Pitch decks","Objection handling guides", "ROI tools","Training","Workshops","Pitch libraries","Demo flows", 
-                    "Proof-of-value materials","Dashboards","Content usage tracking","Message adoption","Enablement impact","Campaigns", "SaaS",
-                    "Cloud infrastructure (AWS, Azure, GCP)","Infrastructure as Code (Terraform, Pulumi)","Backend development","TypeScript","GraphQL",
-                    "REST APIs","Data engineering", "Databricks","Snowflake","ETL pipelines","Data modeling","Frontend engineering","DevOps","Monitoring",
-                    "Security best practices","ECS","EKS","GKE","AKS","Serverless platforms", "AI/ML infrastructure","Data visualization","Tableau",
-                    "Embedded systems","C","C++","Real time systems","Software architecture","Design patterns","Multithreading","Multiprocess applications", 
-                    "Bash scripting","Communication technologies","Layer 2 and Layer 3 network applications","Cybersecurity concepts","Electronics",
-                    "Laboratory instrumentation", "Version control systems","SVN","Microsoft Dynamics 365 (CRM)","Power Platform","CRM","Integration of systems",
-                    "Automation of business processes","Sales","Contact Center", "Service Workspace","Management of access and data security","Agile methodologies",
-                    "Technical planning tools","Spring Boot","Software development","Java backend development", "Angular","HTML","CSS","Bootstrap","APIs REST","Jira","Xray",
-                    "Azure DevOps","Liderança","Gestão","Mentoring","Comunicação","Planeamento","Desenho","Análise","Inovação", "Colaboração","Trabalho em equipa",
-                    "Flexibilidade","Proatividade","Dedicação","Integridade","Transparência","Confiança","Honestidade","Responsabilidade","Criatividade", "Problem-solving",
-                    "Analytical mind","Communication skills","Collaboration","Leadership","Analytical skills","Problem solving","Creativity","Strategic thinking","Adaptability", 
-                    "Fast learning","Ambition","Commitment","Focus on innovation","Dynamism","Autonomy","Teamwork","Organization","Attention to detail","Passion for learning",
-                    "Bias for action", "Intellectual curiosity","Navigating ambiguity", "Planning"]
-
-    # nota: \b representa "boundary", ou seja, o programa procura a palavra por inteiro (sem palavras parecidas); escape(s) - tratamento literal de cada caractere de s.
-    lista_regex = {s: re.compile(r"\b" + re.escape(s) + r"\b", re.IGNORECASE) for s in lista_skills}
-
-    for t in trabalhos: 
-        data_pub_str = t.get("publishedAt")
-        if not data_pub_str:
-            continue
-        try:
-            data_pub = datetime.strptime(data_pub_str.split(" ")[0], "%Y-%m-%d")
-        except ValueError:
-            continue
-
-        if not (dt_ini <= data_pub <= dt_fim):
-            continue
-
-        corpo = t.get("body", "")
-        for skill, rgx in lista_regex.items():
-            if rgx.search(corpo):
-                contador[skill] = contador.get(skill, 0) + 1
-
-    # --- NOVO: ordenar resultados por número de ocorrências (decrescente)
-    contador_ordenado = (dict(sorted(contador.items(), key=lambda x: x[1], reverse=True)))
-
-    # --- NOVO: devolver no formato pretendido (lista com um dicionário)
-    print(json.dumps([contador_ordenado], indent=4, ensure_ascii=False))
-
-#---------------------------------------------------------------------------------------------------------------------------------------------------
-def remove_html_tags(text): #para uma melhor visualição da descrição, elimina-se as tags de html
+# -------------------------------------------------------------------------------
+def remove_html_tags(text):
     if not text:
         return ""
-    text = re.sub(r'</p>', '  ', text) #Duplo espaço quando </p> 
-    clean = re.compile('<.*?>') #elimina <> e os caracteres de dentro que podem ser nenhum ou mais 
+    text = re.sub(r'</p>', '  ', text)
+    clean = re.compile('<.*?>')
     return re.sub(clean, '', text)
-      
+
 @app.command(name="search")
-def search(local: str, empresa: str, n: int, csv_out: bool = typer.Option(False, "--csv", help="Exportar para CSV")): #todos os trabalhos do tipo part-time numa determinada empresa e numa determinada localidade
+def search(local: str, empresa: str, n: int, csv_out: bool = typer.Option(False, "--csv", help="Exportar para CSV")):
     try:
         with open("empregos.json", "r", encoding="utf-8") as f:
             conteudo = json.load(f)
@@ -251,11 +184,7 @@ def search(local: str, empresa: str, n: int, csv_out: bool = typer.Option(False,
 
     for job in trabalhos:
         locations = job.get("locations", [])
-        found_location = False
-        for loc in locations:
-            if local.lower() in loc.get("name", "").lower(): #algumas localizações estão no campo do nome ("name")
-                found_location = True
-                break
+        found_location = any(local.lower() in loc.get("name", "").lower() for loc in locations)
         if not found_location:
             continue
 
@@ -264,16 +193,17 @@ def search(local: str, empresa: str, n: int, csv_out: bool = typer.Option(False,
             continue
 
         types = job.get("types", [])
-        part_time = any("part-time" in t.get("name", "").lower() for t in types) #part-time pode estar no tipo
+        part_time = any("part-time" in t.get("name", "").lower() for t in types)
         title = job.get("title", "").lower()
         body = job.get("body", "").lower()
-        part_time_pattern = r"part[-\s]?time"#\s -espaço em branco ; o espaço em branco e o "-" pode ser opcional "?"
+        part_time_pattern = r"part[-\s]?time"
         if not part_time and (re.search(part_time_pattern, title) or re.search(part_time_pattern, body)):
             part_time = True
 
         if part_time:
             filtered.append(job)
-    filtered = filtered[:n] #n resultados
+
+    filtered = filtered[:n]
 
     if not filtered:
         typer.echo("Nenhum resultado encontrado.")
@@ -281,7 +211,7 @@ def search(local: str, empresa: str, n: int, csv_out: bool = typer.Option(False,
 
     output_data = []
     for job in filtered:
-        locations_list = [loc.get("name", "") for loc in job.get("locations", [])] #passar para sting em vez de lista para o csv
+        locations_list = [loc.get("name", "") for loc in job.get("locations", [])]
         locations_str = ", ".join(locations_list) if locations_list else ""
 
         output_data.append({
@@ -290,20 +220,18 @@ def search(local: str, empresa: str, n: int, csv_out: bool = typer.Option(False,
             "descrição": remove_html_tags(job.get("body", "")),
             "data de publicação": job.get("publishedAt", ""),
             "salário": job.get("wage", ""),
-            "localização":locations_str
+            "localização": locations_str
         })
 
     if csv_out:
         with open("search_results.csv", "w", newline="", encoding="utf-8") as f:
-            if output_data:
-                writer = csv.DictWriter(f, fieldnames=output_data[0].keys())
-                writer.writeheader()
-                writer.writerows(output_data)
-            typer.echo("Resultados exportados para 'search_results.csv'")
+            writer = csv.DictWriter(f, fieldnames=output_data[0].keys())
+            writer.writeheader()
+            writer.writerows(output_data)
+        typer.echo("Resultados exportados para 'search_results.csv'")
     else:
         print(json.dumps(output_data, indent=4, ensure_ascii=False))
 
-
+# -------------------------------------------------------------------------------
 if __name__ == "__main__":
     app()
-
