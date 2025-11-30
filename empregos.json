@@ -1,0 +1,472 @@
+{
+    "total": 1162,
+    "page": 1,
+    "limit": 12,
+    "results": [
+        {
+            "id": 507035,
+            "company": {
+                "id": 1561,
+                "name": "Master.D",
+                "logo": "https://static.itjobs.pt/images/companies/b1/32e/1561/logo.png",
+                "description": "A Master D Portugal é uma empresa de Formação Profissional que oferece uma ampla variedade de formações a todos os interessados em integrar ou evoluir no mercado de trabalho num conjunto de áreas para as quais prepara profissionais.",
+                "address": "Rua Dona Estefânia nº 84 A, \r\n1000-158 Lisboa",
+                "phone": 210402440,
+                "email": "lisboa@masterd.pt",
+                "url": "http://www.masterd.pt",
+                "slug": "master-d"
+            },
+            "companyId": 1561,
+            "title": "Formador na área de Inteligência Artificial",
+            "body": "<p>É apaixonado/a por tecnologia, inovação e ensino?</p><p>O futuro está a ser escrito com Inteligência Artificial, e queremos que faça parte dessa jornada!</p><p>O nosso grupo internacional na área da formação procura um/a Formador/a de IA para liderar um curso abrangente de IA, onde são abordados desde os fundamentos de Python e Machine Learning até tópicos avançados como Deep Learning e a aplicação prática da IA em diferentes setores.</p><p> </p><p><strong>O que procuramos:</strong></p><p> Formação em Engenharia Informática, Ciências da Computação, Matemática, Estatística ou áreas relacionadas;</p><p> Certificações em Machine Learning / Deep Learning (valorizadas);</p><p> Experiência em projetos de IA, desenvolvimento de software ou análise de dados;</p><p> Domínio de Python e experiência em Machine Learning e Deep Learning (CNNs, RNNs, etc.);</p><p> CCP (Certificado de Competências Pedagógicas) - obrigatório;</p><p> Experiência comprovada como formador/a e gosto pela partilha de conhecimento.</p><p> </p><p><strong>O que oferecemos:</strong></p><p> Integração num ambiente dinâmico, inovador e internacional;</p><p> Contrato de prestação de serviços em regime part-time;</p><p> Teletrabalho;</p><p> Um ambiente colaborativo, com espaço para crescer e inovar.</p><p> </p><p>Se gosta de ensinar e inspirar, e quer contribuir para o futuro da formação em Inteligência Artificial, envie o seu CV para <a href=\"mailto:recrutamento.formacao.pt@gmail.com\">recrutamento.formacao.pt@gmail.com</a> com a referência IA/TUT.</p>",
+            "ref": "IA/TUT",
+            "allowRemote": true,
+            "wage": null,
+            "types": [
+                {
+                    "id": "2",
+                    "name": "Part-time"
+                }
+            ],
+            "contracts": [
+                {
+                    "id": "4",
+                    "name": "Freelance"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "14",
+                    "name": "Lisboa"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:57:31",
+            "updatedAt": "2025-11-14 21:57:31",
+            "slug": "formador-a-na-area-de-inteligencia-artificial"
+        },
+        {
+            "id": 507049,
+            "company": {
+                "id": 2947,
+                "name": "Adentis",
+                "logo": "https://static.itjobs.pt/images/companies/ad/8e8/2947/logo.png",
+                "description": "Com mais de 5 anos de existência a nível nacional, contamos com mais de 200 colaboradores com o nosso ADN e posicionamo-nos no mercado com 3 ofertas de serviço:\r\n•\tStrategy (Outsourcing, NeXel, Team as a Service, Tech Academies);\r\n•\tR&D (Estágios, POC, Laboratório Tecnológico);\r\n•\tNearshore.\r\n\r\nNa ADENTIS centramo-nos nas PESSOAS e é este o nosso salário emocional:\r\n•\tEquilíbrio entre a vida profissional e pessoal;\r\n•\tFlexibilidade na rotina organizacional;\r\n•\tBenefícios de saúde para colaboradores e familiares;\r\n•\tEventos Team Building;\r\n•\tProtocolo com mais de 300 parceiros;\r\n•\tFormação contínua através de um centro profissional de formação e certificação;\r\n•\tAcompanhamento e feedback contínuo através de um plano personalizado;\r\n•\tProgressão de carreira através de avaliações objetivas e diretas.",
+                "address": "Avenida Barbosa du Bocage 113  –  1º Esq,\r\n1050-031 Lisboa",
+                "phone": "21 139 71 67",
+                "email": "geral@adentis.pt",
+                "url": "https://adentis.pt/",
+                "url_twitter": "https://twitter.com/AdentisPortugal",
+                "url_facebook": "https://www.facebook.com/adentispt",
+                "url_linkedin": "https://www.linkedin.com/company/adentis-portugal/",
+                "slug": "adentis"
+            },
+            "companyId": 2947,
+            "title": "OutSystems Developer",
+            "body": "<p>Com mais de 8 anos de existência a nível nacional, contamos com mais de 200 colaboradores com o nosso ADN e posicionamo-nos no mercado com 3 ofertas de serviço:</p><ul><li>Strategy (Outsourcing, Team as a Service, Tech Academies);</li><li>R&amp;D (Estágios, POC, Laboratório Tecnológico);</li><li>Nearshore.</li></ul><p>Na ADENTIS centramo-nos nas PESSOAS e é este o nosso salário emocional:</p><ul><li>Equilíbrio entre a vida profissional e pessoal;</li><li>Flexibilidade na rotina organizacional;</li><li>Benefícios de saúde para colaboradores e familiares;</li><li>Eventos <em>Team Building;</em></li><li>Protocolo com mais de 300 parceiros;</li><li>Formação contínua através de um centro profissional de formação e certificação;</li><li>Acompanhamento e <em>feedback</em> contínuo através de um plano personalizado;</li><li>Progressão de carreira através de avaliações objetivas e diretas.</li></ul><p><strong>IMPORTANTE:</strong> Exige-se fluência em português (falado e escrito) e autorização legal para trabalhar em Portugal.</p><p><strong>O que procuramos:</strong></p><ul><li>Licenciatura em Engenharia Informática ou similar;</li><li>Experiência mínima de 2 anos em desenvolvimento sob a plataforma Outsystems;</li><li>Bom nível de inglês, falado e escrito;</li><li>Certificação OutSystems.</li></ul><p><strong>O que valorizamos:</strong></p><ul><li>Desenvolvimento de webservices;</li><li>Programação web (SQL Server, C#, Javascript e CSS);</li><li>Conhecimentos da metodologia Agile.</li></ul><p>Se queres fazer parte de uma empresa <em>People First,</em> junta-te a nós.</p><p>We walk with you!</p><p>REF: OPO.ARO.OST</p><p><em>Na Adentis defendemos a igualdade e valorizamos a diversidade. Criamos um ambiente seguro, diversificado e onde as oportunidades são iguais para todos os colaboradores!</em></p><p><em>Não discriminamos com base em idade, etnia, orientação sexual, género, deficiência ou qualquer fator que não seja o mérito.</em></p><p><em>Todas as candidaturas com competências para o cargo são bem-vindas!</em></p><p> </p><p><br /><a href=\"https://jobpage.cvwarehouse.com/ApplicationForm/AppForm?job=380069&amp;channel=ITJobs&amp;lang=pt-PT&amp;companyGuid=6ad00e65-ec33-4e2e-a3e7-2feea05a5923\">Candidate-se aqui</a></p><p> </p>",
+            "ref": "",
+            "allowRemote": true,
+            "wage": null,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "contracts": [
+                {
+                    "id": "2",
+                    "name": "Permanent"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "18",
+                    "name": "Porto"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:57:14",
+            "updatedAt": "2025-11-14 21:57:14",
+            "slug": "outsystems-developer"
+        },
+        {
+            "id": 507044,
+            "company": {
+                "id": 6587,
+                "name": "team.it",
+                "logo": "https://static.itjobs.pt/images/companies/2e/2c4/6587/logo.png",
+                "description": "Um conjunto de pessoas com um propósito comum: agregar uma comunidade em torno de um projeto de consultoria tecnológica inclusivo. Que quer regressar às origens, através de uma estratégia de corporativismo sustentável – work-life balance, remote work, envolvimento comunitário – e que tem como objetivo último o empoderamento e a felicidade das nossas pessoas.  Acreditamos que o sucesso se baseia na construção de uma equipa centrada no bem-estar coletivo, no desenvolvimento pessoal e profissional, e assente numa filosofia de trabalho que potencie a gestão saudável das nossas vidas.  team.it, back to basics.",
+                "email": "recrutamento@team-it.pt",
+                "url": "https://www.team-it.pt",
+                "url_twitter": "https://twitter.com/team_it_moongy",
+                "url_facebook": "https://www.facebook.com/team.it.moongy",
+                "url_linkedin": "https://www.linkedin.com/company/team-it-moongy",
+                "slug": "team-it"
+            },
+            "companyId": 6587,
+            "title": "Analista Funcional (Banca)",
+            "body": "<p>Queremos fazer diferente com o essencial.</p><p>Apostamos numa estratégia de corporativismo sustentável. Acreditamos que o sucesso se baseia na construção de uma equipa centrada no bem-estar coletivo, no desenvolvimento pessoal e profissional, e assente numa filosofia de trabalho que potencie a gestão saudável das nossas vidas. Work-life balance, beginner’s mind e community involvement são a nossa identidade, os nossos fundamentos e a nossa cultura.</p><p>O que precisas para te juntares a nós:</p><ul><li>Formação Superior em Engenharia, Economia, Gestão, Sistemas de Informação ou similar;</li><li>Cerca de 4 anos de experiência como Analista Funcional, preferencialmente em contexto bancário;</li><li>Experiência em levantamento e análise de requisitos com equipas de negócio e TI;</li><li>Capacidade de preparar documentação funcional: casos de uso, regras de negócio, fluxos, interfaces e modelos de dados;</li><li>Conhecimentos dos principais processos de crédito;</li><li>Experiência no apoio a testes funcionais e validação de soluções;</li><li>Boa capacidade de síntese, organização e comunicação;</li><li>Valorizam-se conhecimentos em metodologias Agile</li></ul><p>-&gt; Notas importantes:</p><p>Localização – Oeiras</p><p>Projeto em Regime Híbrido</p><p>O que temos para te oferecer:</p><p>- Gestão de Talento personalizada. Valorizamos e privilegiamos um acompanhamento próximo e regular, somos uma equipa desde o primeiro dia.</p><p>- Pacote de benefícios amplo e flexível. Seguro de saúde, seguro de vida e acidentes pessoais, descontos e benefícios, plano de telecomunicações e muito mais.</p><p>- Apostamos na formação e na tua carreira. Formação certificada, plataformas de formação online, centro de exames Pearson VUE... Apostamos em ti!</p><p>- Sustentabilidade e envolvimento comunitário. Queremos dar significado ao nosso trabalho e investir num projeto de consultoria inclusivo. Para isso, precisamos da tua ajuda.</p><p>team.it, back to basics!</p><p>Juntas-te a nós?</p><p>Na Team IT defendemos a igualdade e valorizamos a diversidade. </p><p>Criamos um ambiente seguro, diversificado e onde as oportunidades são iguais para todos!</p><p>Não discriminamos com base em idade, etnia, orientação sexual, género, deficiência ou qualquer fator que não seja o mérito.</p><p>Todas as candidaturas com competências para o cargo são bem-vindas!</p><p> </p><p><br /><a href=\"https://jobpage.cvwarehouse.com/ApplicationForm/AppForm?job=380053&amp;companyGuid=ce3ae4ae-9f54-4f25-9a70-4d486d0d7a27&amp;channel=ITJobs&amp;lang=pt-PT\">Candidate-se aqui</a></p><p> </p>",
+            "ref": "",
+            "allowRemote": false,
+            "wage": null,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "14",
+                    "name": "Lisboa"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:57:07",
+            "updatedAt": "2025-11-14 21:57:07",
+            "slug": "analista-funcional-banca"
+        },
+        {
+            "id": 507037,
+            "company": {
+                "id": 6065,
+                "name": "CITEVE - Centro Tecnológico das Indústrias Têxtil e Vestuário de Portugal",
+                "logo": "https://static.itjobs.pt/images/companies/df/d78/6065/logo.png",
+                "description": "CITEVE é um Centro Tecnológico, organização privada sem fins lucrativos, sediado em Vila Nova de Famalicão e com delegações comerciais no Brasil, Tunísia, Argentina, Paquistão, Chile e México, que disponibiliza as empresas do Sector Têxtil e do Vestuário, principalmente PME (90%), um portfólio de serviços que inclui ensaios laboratoriais, certificação de produtos, consultoria técnica e tecnológica, I&D+inovação, formação, e moda e design.",
+                "address": "Rua Fernando Mesquita, nº 2785\r\n4760-034 Vila Nova de Famalicão",
+                "url": "https://www.citeve.pt",
+                "url_twitter": "https://twitter.com/citeve",
+                "url_facebook": "http://www.facebook.com/CITEVE",
+                "slug": "citeve-centro-tecnologico-das-industrias-textil-e-vestuario-de-portugal"
+            },
+            "companyId": 6065,
+            "title": "Formadores para as áreas da Transição Digital",
+            "body": "<p>A Academia CITEVE está a reforçar a sua Bolsa de Formadores e procura profissionais experientes e motivados para integrar as suas ações de formação na seguinte área:</p><p> </p><p><strong>TRANSIÇÃO DIGITAL</strong></p><p>A Transição Digital no setor têxtil e vestuário é hoje um pilar estratégico para a competitividade das empresas, exigindo novos perfis, novas competências e uma visão inovadora sobre o futuro do trabalho.</p><p> </p><p><strong>Procuramos formadores nas seguintes áreas:</strong></p><ul><li>Inteligência Artificial;</li><li>Robótica e Automação;</li><li>Low-code / no-code e Power Platforms;</li><li>Digital Product Creation (DPC);</li><li>Robótica e Indústria 4.0;</li><li>Cibersegurança e Proteção de Dados;</li><li>Transformação Digital aplicada ao setor Têxtil e Vestuário;</li><li>Outras;</li></ul><p> </p><p><strong>PRINCIPAIS RESPONSABILIDADES</strong></p><ul><li><strong>Planear e preparar</strong> as ações de formação, em articulação com a Academia CITEVE, garantindo a adequação dos conteúdos aos objetivos e ao público-alvo.</li><li><strong>Conduzir e dinamizar</strong> sessões presenciais ou online, promovendo a participação ativa e a aprendizagem prática.</li><li><strong>Acompanhar e apoiar</strong> os formandos ao longo do processo, incentivando o desenvolvimento de competências.</li><li><strong>Avaliar e fornecer feedback</strong>, assegurando a monitorização da aprendizagem e a qualidade pedagógica.</li><li><strong>Colaborar na melhoria contínua</strong> dos programas e manter-se atualizado nas tendências e tecnologias da sua área.</li></ul><p> </p><p><strong>OFERECEMOS</strong></p><p><strong>Porquê colaborar com a Academia CITEVE?</strong></p><ul><li>Integração numa rede de formadores de referência nacional e internacional;</li><li>Oportunidade de contribuir para a <strong>capacitação digital do setor têxtil e vestuário</strong>;</li><li>Participação em projetos de inovação e formação contínua com impacto direto na indústria.</li></ul><p> </p><p><strong>PERFIL DO CANDIDATO</strong></p><ul><li>Experiência profissional relevante nas áreas indicadas;</li><li>CCP (Certificado de Competências Pedagógicas) ou equivalente;</li><li>Boa capacidade de comunicação e orientação para a partilha de conhecimento;</li><li>Interesse em colaborar em projetos de formação inovadores e multidisciplinares.</li></ul><p> </p><p><strong>CANDIDATURA</strong></p><p>Os interessados devem submeter o Curriculum Vitae detalhado através deste <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScxzgOSfWuP5dyz7Kd-cot-BhYBJU6h4rZwuXy4JUCwbHziNQ/viewform\">link</a>.</p><p>A Academia CITEVE apenas responderá às candidaturas que pré selecionar.</p>",
+            "ref": "Bolsa Formadores Digital",
+            "allowRemote": false,
+            "wage": null,
+            "types": [
+                {
+                    "id": "2",
+                    "name": "Part-time"
+                }
+            ],
+            "contracts": [
+                {
+                    "id": "4",
+                    "name": "Freelance"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "4",
+                    "name": "Braga"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:56:36",
+            "updatedAt": "2025-11-14 21:56:36",
+            "slug": "formadores-para-as-areas-da-transicao-digital"
+        },
+        {
+            "id": 507043,
+            "company": {
+                "id": 3087,
+                "name": "QiBit Portugal",
+                "logo": "https://static.itjobs.pt/images/companies/78/bc6/3087/logo.png",
+                "description": "A Qibit é a marca especializada em recrutamento e seleção de perfis tecnológicos da Gi Group Holding. Com um profundo conhecimento do setor IT, estamos focados na captação e retenção de talento IT nas principais áreas tecnológicas como Programação Front-end  e Back-end, Data Science, Business Intelligence, DWH, Sistemas de Informação, entre outros.",
+                "address": "Oriente Green Campus\r\nRua Adão Manuel Ramos Barata, nº 3, Fração CA\r\n1885-100 Moscavide",
+                "url": "https://pt.qibit.tech/",
+                "url_linkedin": "https://www.linkedin.com/company/qibit-tech/",
+                "slug": "qibit-portugal"
+            },
+            "companyId": 3087,
+            "title": "Senior IT Auditor",
+            "body": "<p>We are looking for a Senior IT Auditor to integrate directly the team of our client - a reference company in the industry sector.</p><p> </p><p>What will be your main tasks and responsibilities?</p><ul><li>Perform the IT Audit assignments based on the approval of Annual Audit Plans;</li><li>Support operational process audit assignments from the data analytics perspective;</li><li>Support ethics investigation cases from the data analytics perspectives;</li><li>Lead Audit 4.0 Digitalization Process for further improvements.</li></ul><p> </p><p>What is required from you?</p><ul><li>Academic background in Computer Engineering, Science or similar areas;</li><li>Minimum 04 years of experience in IT Audit;</li><li>Strong knowledge of information security, IT Governance (e.g. COBIT) and IT Service Management (e.g. ITIL);</li><li>Knowledge and professional experience with digitalization, technology process and SAP/ERP;</li><li>Ability to work independently and manage multiple priorities across different time zones and cultures;</li><li>Good communication skills, as well as critical thinking and problem-solving skills;</li><li>Willingness to travel occasionally to different subsidiaries if required;</li><li>Fluency in English, both written and spoken.</li></ul><p> </p><p>Sounds like you? Send us your CV and let's talk!</p><p> </p><p>#LI-MP1</p><p><a href=\"https://www.aplitrak.com/?adid=bWFyaWEub2xpdmVpcmEuNDE0NzcuODYxNkBnaWdyb3VwcG9ydHVnYWwuYXBsaXRyYWsuY29t\">Candidate-se através do website</a></p>",
+            "ref": 175091,
+            "allowRemote": false,
+            "wage": null,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "contracts": [
+                {
+                    "id": "2",
+                    "name": "Permanent"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "14",
+                    "name": "Lisboa"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:56:25",
+            "updatedAt": "2025-11-14 21:56:25",
+            "slug": "senior-it-auditor"
+        },
+        {
+            "id": 507036,
+            "company": {
+                "id": 501,
+                "name": "Noesis Portugal",
+                "logo": "https://static.itjobs.pt/images/companies/5b/69b/501/logo.png",
+                "description": "Founded in 1995, we are an international tech consulting company certified by Great Place to Work and in second place in The Best Workplaces 23. We offer innovative solutions to support our clients in their digital transformation. We have over a thousand talents specialized in different technologies, with offices in Portugal, Spain, the Netherlands, Brazil, Ireland, and the USA. Over the years, we have grown and expanded, always staying true to our core values of excellence, innovation, and customer satisfaction. Today, we are a leading player in our industry, with a reputation for delivering cutting-edge solutions that exceed our client's expectations.",
+                "address": "Centro Empresarial Torres de Lisboa\r\nRua Tomás da Fonseca\r\nTorre E - 14ºPiso\r\n1600-209 Lisboa",
+                "phone": "+351 21 423 54 30",
+                "email": "jobs@noesis.pt",
+                "url": "http://www.noesis.pt",
+                "url_facebook": "https://www.facebook.com/NoesisPortugal/",
+                "url_linkedin": "https://www.linkedin.com/company/noesis-portugal?trk=top_nav_home",
+                "slug": "noesis-portugal-consultadoria-em-sistemas-de-informacao-sa"
+            },
+            "companyId": 501,
+            "title": "Data Scientist Sénior",
+            "body": "<p>A Noesis procura um(a) Data Scientist Sénior com experiência sólida em Machine Learning tradicional e Inteligência Artificial Generativa (GenAI), para contribuir activamente no desenvolvimento e operacionalização de soluções avançadas de dados. Valorizamos um perfil com forte orientação técnica, experiência prática em ambientes cloud (Azure, GCP e AWS), e domínio de práticas de MLOps para integração eficiente de modelos em produção.</p><p><strong>Principais Tarefas e Responsabilidades:</strong></p><ul><li>Participar no desenho e desenvolvimento de soluções de IA Generativa, incluindo modelos com transformers, embeddings e pipelines baseados em LLMs;</li><li>Construir e optimizar modelos de Machine Learning tradicional para diferentes casos de uso (classificação, regressão, clustering, etc.);</li><li>Explorar, preparar e transformar dados, aplicando boas práticas de engenharia de features para melhorar a performance dos modelos;</li><li>Contribuir para a automação e reprodutibilidade de pipelines de ciência de dados com ferramentas de MLOps, garantindo a monitorização e manutenção contínua em produção;</li><li>Comunicar os resultados analíticos de forma clara, com foco na aplicabilidade e impacto no negócio;</li><li>Manter-se atualizado/a com as mais recentes tendências e ferramentas no ecossistema de IA, ML e cloud.</li></ul><p><strong>Requisitos:</strong></p><ul><li>Licenciatura ou Mestrado em Ciência de Computadores, Engenharia, Matemática Aplicada, Data Science ou áreas semelhantes;</li><li>Experiência comprovada no desenvolvimento de soluções de IA Generativa, incluindo utilização de transformers, embeddings, e conhecimento de prompt engineering;</li><li>Forte domínio de técnicas de Machine Learning tradicional, incluindo aprendizagem supervisionada e não supervisionada;</li><li>Fluência em Python e bibliotecas como numpy, pandas, scikit-learn, matplotlib, seaborn;</li><li>Experiência com PySpark e manipulação de grandes volumes de dados;</li><li>Conhecimentos práticos de MLOps: versionamento de modelos, tracking de experiências (ex: MLflow), deployment e monitorização;</li><li>Experiência em ambientes cloud, nomeadamente:<ul><li>Azure (ex: Azure Machine Learning, Data Factory);</li><li>GCP (ex: Vertex AI, BigQuery);</li><li>AWS (ex: SageMaker, S3);</li></ul></li><li>Disponibilidade para regime híbrido em Lisboa.</li></ul><p><strong>Valorizamos:</strong></p><ul><li>Experiência com modelos LLMs open-source (ex: LLaMA, Mistral, Falcon);</li><li>Conhecimento de frameworks como LangChain, LangSmith ou LlamaIndex;</li><li>Certificações relevantes em cloud (ex: Microsoft Azure AI Engineer Associate, Google Cloud Professional Data Engineer, AWS Certified Machine Learning – Specialty);</li><li>Capacidade para trabalhar de forma autónoma e contribuir para a definição de boas práticas dentro da equipa;</li><li>Sensibilidade para questões de ética, viés algorítmico e privacidade de dados.</li></ul><p> </p><p>Se reúnes estas condições e gostarias de integrar uma organização inovadora, que aposta continuamente na formação dos seus talentos, envia-nos a tua candidatura aqui &gt; <a href=\"https://opportunities.noesis.pt/jobs/data-scientist-senior-lisboa-hibrido-b0c768e3-a7b8-4bf3-8cf7-ab20ec62a0ea\">Data Scientist Sénior</a></p><p><strong>Join us. Let’s innovate together!</strong></p><p>Todos os nossos processos de recrutamento e seleção baseiam-se na igualdade de oportunidades, valorizando a competência e o potencial de cada pessoa e garantindo que nenhum candidato ou candidata é discriminado com base em género, etnia, orientação sexual, idade, religião ou condição física.</p><p>- Anúncio criado ao abrigo da Lei n º 4 / 2019, de 10 de Janeiro</p>",
+            "ref": "",
+            "allowRemote": false,
+            "wage": null,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "14",
+                    "name": "Lisboa"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:56:15",
+            "updatedAt": "2025-11-14 21:56:15",
+            "slug": "data-scientist-senior"
+        },
+        {
+            "id": 506992,
+            "company": {
+                "id": 7832,
+                "name": "Ingenious Lion",
+                "logo": "https://static.itjobs.pt/images/companies/ed/0e6/7832/logo.png",
+                "description": "At Ingenious Lion we are always looking for the best new talent to help build our culture. Discover how you can make an impact and inspire others: see how your creativity and talent can change the status quo.",
+                "email": "info@ingeniouslion.com",
+                "url": "https://www.ingeniouslion.com",
+                "url_linkedin": "https://www.linkedin.com/company/ingenious-lion/",
+                "slug": "ingenious-lion"
+            },
+            "companyId": 7832,
+            "title": "Data Engineer (Mid/Senior)",
+            "body": "<p><strong>This is Us</strong></p><p>Ingenious Lion is a Digital Tech Hub designed exclusively for Publicis Groupe, one of the world’s leading marketing agencies.</p><p>As the marketing industry continues to drive digital transformation, Publicis Groupe empowers its clients with innovative data solutions and media ecosystems. Ingenious Lion has one mission: to partner with Publicis’ global teams in creating innovative data and digital tech products that will shape the future.</p><p>What makes us successful? Two key ingredients: we pursue excellence and strive for the best, which enables us to nurture a thriving company culture. We focus on creating an environment where people don’t just work; they grow, challenge themselves, strive for excellence, and are recognized for their incredible value to the team.</p><p>If you're curious to learn more about us, here are four things you should know:</p><ul><li>Our company culture is anchored in five powerful values: Joy, Honesty, Connectivity, Own Challenger, and Greater World. Do these values resonate with you?</li><li>We are committed to diversity and inclusion because we believe our unique differences make us stronger.</li><li>We encourage open communication and create an environment where everyone’s voice is heard and every contribution is valued.</li><li>Finally, we’re somewhat “obsessed” with quality. We believe in continuous learning and knowledge sharing; when we hit a roadblock, we don’t just complain—we create solutions to overcome it.</li></ul><p>In one sentence, we are a group of people with an unusual aptitude for generating great ideas, groundbreaking concepts, and infusing them with positive energy and good fun.</p><p>Feeling Ingenious already?</p><p><strong>A Sneak Peek at Your Future Role</strong></p><p>As a Data Engineer, your mission is to design, build, and optimise data solutions that support the transition towards a modern Lakehouse architecture. You’ll work on creating efficient data workflows, ensuring that information is reliable, structured, and ready to power decision-making across the organisation.</p><p>This role focuses on enabling seamless data movement and transformation, combining the flexibility of a data lake with the performance of a data warehouse. You’ll play a key part in shaping the platform, strengthening data foundations, and unlocking advanced analytics opportunities. </p><p>You’ll take ownership of data solutions end-to-end, from modelling and transformation to workflow automation, to ensuring performance and quality. Collaborating with an international team, you’ll align technical delivery with business priorities, while promoting best practices in scalability, governance, and reliability.</p><p><strong>Here Are the Key Tasks You'll Be Working on Every Day</strong></p><ul><li>Design, build, and optimise data workflows that support large-scale migrations and transformations, ensuring accuracy, reliability, and performance across different environments.</li><li>Develop and maintain processes that orchestrate end-to-end data operations, enabling efficient movement and integration of datasets for analytical and operational purposes.</li><li>Contribute to the evolution of a modern data platform that combines the scalability of a data lake with the structure and governance of a data warehouse, supporting the Lakehouse architecture.</li><li>Collaborate with colleagues in an agile setting, aligning technical delivery with business priorities and ensuring solutions are fit for purpose.</li><li>Take ownership of monitoring, troubleshooting, and improving data workflows, continuously enhancing processes for efficiency, scalability, and resilience.</li></ul><p><strong>We're Thrilled to Have You Consider Joining Our Team. Here Are the Qualifications We're Seeking</strong></p><ul><li>At least three years of experience with Databases and creating scalable data pipelines.</li><li>Experience designing and maintaining scalable data pipelines with Databricks, also notebooks and jobs to support ETL processes.</li><li>Proficiency with SQL, Python (with PySpark), and Databricks.</li><li>Working experience with AWS Redshift, including proficiency with Redshift SQL.</li><li>Strong understanding of modern data architectures, particularly the Delta Lakehouse model. </li><li>Knowledge of data warehouse and data lake concepts, with practical experience in preparing and managing data tables.</li><li>Strong communication skills in English, both written and spoken.</li></ul><p><strong>Skills That Would Make You Shine Even Brighter!</strong></p><ul><li>You are familiar with Terraform, including workflow automation and configuration (YAML-based).</li><li>You know infrastructure-as-code concepts and structured workflow management.</li><li>You have previous involvement with Airflow and Dagster.</li></ul><p><strong>Apply at:</strong> <a href=\"https://careers.ingeniouslion.com/jobs/6695235-data-engineer-mid-senior\">https://careers.ingeniouslion.com/jobs/6695235-data-engineer-mid-senior</a></p>",
+            "ref": "DTE_20251031",
+            "allowRemote": true,
+            "wage": 60000,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "contracts": [
+                {
+                    "id": "2",
+                    "name": "Permanent"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:56:07",
+            "updatedAt": "2025-11-14 21:56:07",
+            "slug": "data-engineer-mid-senior"
+        },
+        {
+            "id": 507000,
+            "company": {
+                "id": 6433,
+                "name": "We Are Meta",
+                "logo": "https://static.itjobs.pt/images/companies/db/ec0/6433/logo.png",
+                "description": "We Are META was born to prove that Tech Talent Consultancy can be great for IT careers.\r\n \r\nWe empower IT businesses by creating a CRASH: a group of highly skilled and motivated tech professionals that extends our client's team and charges at every obstacle, fearlessly! Recruiting amazing tech talent demands bright minds and honest people, and at META, we have both!\r\n \r\nJoin the CRASH and become a Rhino!",
+                "address": "Av. Almirante Reis, 54, 6th floor\r\n1150-019, Lisboa",
+                "phone": "+351 211 601 380",
+                "email": "sayhello@wearemeta.io",
+                "url": "https://wearemeta.io",
+                "url_linkedin": "https://www.linkedin.com/company/we-are-meta",
+                "slug": "we-are-meta"
+            },
+            "companyId": 6433,
+            "title": "Data Engineer (Google Cloud Platform)",
+            "body": "<p><strong>Seeking a Data Engineer (Google Cloud Platform): Rhino, are you there? </strong></p><p style=\"text-align:center;\">At WE ARE META, we focus on finding the perfect match between our Rhinos and our clients.</p><p><strong><em>Why join us? </em></strong></p><ol><li><strong>Expand your network: </strong> As a <strong> consultant</strong> at We Are META, you’ll have access to a network of national and international partners across <strong> diverse</strong> sectors of the <strong> tech</strong> industry.</li><li><strong>Enjoy our perks: </strong> When you join the <strong> crash</strong> you’ll have an array of <strong> benefits</strong>, to help you achieve the best work-life balance.</li><li><strong>Get your perfect match: </strong> Our <strong> recruiters</strong> do their best to get the best position for you, whether in terms of <strong> working policy</strong>(remote, hybrid, on-site) or the company’s <strong> culture</strong>.</li><li><strong>Personalized support: </strong> With our <strong> career coach</strong>, we assure that all your needs are being met and you’re being provided everything you need to excel in your professional life because the <strong> well-being</strong> of our Rhinos is our number one priority.</li></ol><p><strong><em>Perks of becoming a Rhino: </em></strong></p><ul><li>You’ll get a welcome kit </li><li>Opportunities for career progression </li><li>Live on the edge with our health insurance </li><li>Coverflex meal card </li><li>Other protocols and special discounts</li></ul><p><strong><em>For this position, the perfect Rhino should have the following skills: </em></strong></p><ul><li>At least 2 years of experience working with cloud platforms and services for data engineering (preferably GCP)</li><li>Proficiency in programming languages such as Python, Java, or Scala</li><li>Hands-on experience with Big Data tools such as Spark, Flink, Kafka, Elasticsearch, Hadoop, Hive, Sqoop, Flume, Impala, Kafka Streams/Connect, Druid, etc</li><li>Strong knowledge of data modeling and database design principles</li><li>Experience with data integration and ETL tools (e.g., Apache Kafka, Talend)</li><li>Advanced SQL skills and experience with both relational and NoSQL databases</li><li>Familiarity with other cloud services such as AWS S3 or Azure Data Factory (plus)</li><li>Experience using version control tools such as Git</li><li>Fluency in English (B2)</li><li>Availability for hybrid work in Porto, Portugal</li></ul><p><strong>If you're ready to join the crash and become a Rhino, apply to: <a href=\"mailto:jointhecrash@wearemeta.io\">jointhecrash@wearemeta.io</a></strong></p>",
+            "ref": "db_c2286243ea4ffa67836e1f7ec1c22a04__4585",
+            "allowRemote": false,
+            "wage": null,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "contracts": [
+                {
+                    "id": "1",
+                    "name": "Fixed term"
+                },
+                {
+                    "id": "2",
+                    "name": "Permanent"
+                },
+                {
+                    "id": "4",
+                    "name": "Freelance"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "18",
+                    "name": "Porto"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:55:59",
+            "updatedAt": "2025-11-14 21:55:59",
+            "slug": "data-engineer-google-cloud-platform"
+        },
+        {
+            "id": 506998,
+            "company": {
+                "id": 995,
+                "name": "Integer Consulting",
+                "logo": "https://static.itjobs.pt/images/companies/2b/cab/995/logo.png",
+                "description": "A Integer Consulting é uma empresa portuguesa de consultoria em tecnologias de informação. Somos especialistas em serviços de IT outsourcing, software, projetos de nearshore e desenvolvimento à medida. Somos parceiros dos principais players tecnológicos a nível mundial e trabalhamos com empresas nacionais e multinacionais de diversos setores de atividade. A maioria dos projetos em que participamos são em Portugal, no Brasil e um pouco por toda a Europa. O que nos diferencia é o talento tecnológico e a experiência das pessoas que fazem parte da equipa e que integram os nossos projetos.",
+                "address": "Rua Julieta Ferrão, Nº10 - 8ºESQ \r\n1600-131 Lisboa",
+                "email": "accountpay@integer.pt",
+                "url": "http://www.integer.pt",
+                "url_linkedin": "https://www.linkedin.com/company/integer-consulting/",
+                "slug": "integer-consulting"
+            },
+            "companyId": 995,
+            "title": "Junior .NET Developer | Recém-Licenciado",
+            "body": "<p>A Integer Consulting é uma empresa portuguesa de consultoria em tecnologias de informação. Somos especialistas em serviços de IT outsourcing, software, projetos de nearshore e desenvolvimento à medida. Somos parceiros dos principais players tecnológicos a nível mundial e trabalhamos com empresas nacionais e multinacionais de diversos setores de atividade. A maioria dos projetos em que participamos são em Portugal, no Brasil e um pouco por toda a Europa. O que nos diferencia é o talento tecnológico e a experiência das pessoas que fazem parte da equipa e que integram os nossos projetos.</p><p>Estás à procura de novas oportunidades na área de IT? Temos novidades para ti!</p><p>Este pode ser o desafio perfeito, se tiveres:<br />- Licenciatura em Engenharia Informática ou similar (obrigatório);<br />- Conhecimentos em Fundamentos de Ciência da Computação, como Programação Orientada a Objetos, Estruturas de Dados, Protocolos de Comunicação e Bases de Dados;<br />- Conhecimentos em APis REST; <br />- Experiência com bancos de dados NoSQL ou orientados a documentos (ex.: MongoDB) será valorizada<br />- Inglês fluente (obrigatório).</p><p>Observação: regime híbrido em Lisboa. Atenção aos requisitos obrigatórios.</p><p>Se tens o amazINg tech talent pretendido e queres fazer parte da equipa INTEGER, responde a este anúncio com o teu CV atualizado para <a href=\"mailto:bruno.carvalho@integer.pt\">bruno.carvalho@integer.pt</a></p><p>Para saber mais como protegemos a tua privacidade, consulte a nossa Política em <a href=\"http://www.integerconsulting.pt\">www.integerconsulting.pt</a></p>",
+            "ref": "IC_.NET",
+            "allowRemote": false,
+            "wage": null,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "14",
+                    "name": "Lisboa"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:55:53",
+            "updatedAt": "2025-11-14 21:55:53",
+            "slug": "junior-net-developer-recem-licenciado"
+        },
+        {
+            "id": 507013,
+            "company": {
+                "id": 885,
+                "name": "Michael Page Portugal",
+                "logo": "https://static.itjobs.pt/images/companies/0e/fe3/885/logo.png",
+                "description": "A Michael Page seleciona candidatos qualificados para clientes de prestígio.\r\nRecrutamos quadros médios e superiores para projectos de caracter permanente e temporário.",
+                "address": "Avenida Liberdade, n. 180 A, 3º Andar\r\n1250-146 Lisboa\r\n",
+                "email": "lisboa@michaelpage.pt",
+                "url": "http://www.michaelpage.pt",
+                "url_twitter": "https://twitter.com/MichaelPagePT",
+                "url_facebook": "https://www.facebook.com/pages/Michael-Page-International-Portugal/290989560911504",
+                "url_linkedin": "https://www.linkedin.com/company/michael-page",
+                "slug": "michael-page-international-portugal"
+            },
+            "companyId": 885,
+            "title": "Senior Robotics Engineer",
+            "body": "<p>The Senior Robotics Engineer will be responsible for designing, developing, and implementing robotic systems and solutions. The ideal candidate must have a strong background in robotics software architecture, control, and sensor fusion.</p><p><strong>Client Details</strong></p><p>Our client is an international industrial group currently investing in Portugal, with the establishment of a new manufacturing facility in the country and a Support Office in Porto.</p><p><strong>Description</strong></p><ul><li>Develop, maintain, and extend autonomous behaviors leveraging ArduPilot and related ecosystems.</li><li>Architect and implement Python services to manage mission planning, telemetry, and autonomy features.</li><li>Implement and optimize sensor fusion algorithms</li><li>Work with and debug interface protocols such as Serial, I2C, Serial, CAN and MAVLink for sensor and actuator integration.</li><li>Develop and tune control algorithms for reliable robotic operation.</li><li>Collaborate with hardware engineers to ensure efficient integration of sensors, actuators and embedded systems.</li><li>Provide technical leadership, mentor junior engineers, and contribute to architectural decisions.</li></ul><p><strong>Profile</strong></p><ul><li>Bachelor's or Master's degree in Robotics, Electrical Engineering, Computer Engineering, or related field.</li><li>8+ years of experience in robotics software development, with hands-on experience.</li><li>Strong programming skills in Python and C++.</li><li>Proven expertise with interface protocols (Serial, I2C, CAN, MAVLink, etc.).</li><li>Experience with sensor fusion (Kalman Filters, complementary filters, or other estimation techniques).</li><li>Solid understanding of control theory and implementation of control algorithms.</li><li>Experience with simulation tools.</li><li>Strong debugging, problem-solving, and optimization skills.</li><li>Excellent communication skills and ability to work in cross-disciplinary teams.</li><li>English proficiency for technical communication.</li></ul><p><strong>Job Offer</strong></p><ul><li>Competitive salary and benefits.</li><li>Engaging projects with a focus on cutting-edge technologies.</li></ul><p><a href=\"https://www.aplitrak.com/?adid=cGVkcm9udW5lcy44NzczOC44NjE2QHBhZ2VwdC5hcGxpdHJhay5jb20\">Candidate-se através do website</a></p>",
+            "ref": "JN -112025-6882721",
+            "allowRemote": false,
+            "wage": 59000,
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Full-time"
+                }
+            ],
+            "contracts": [
+                {
+                    "id": "2",
+                    "name": "Permanent"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "18",
+                    "name": "Porto"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:55:48",
+            "updatedAt": "2025-11-14 21:55:48",
+            "slug": "senior-robotics-engineer"
+        },
+        {
+            "id": 506987,
+            "company": {
+                "id": 6466,
+                "name": "Neotalent Conclusion",
+                "logo": "https://static.itjobs.pt/images/companies/21/9c5/6466/logo.png",
+                "description": "Neotalent Conclusion is one of the leading Iberian specialists providing services in Information Technology and Engineering services. As part of the Netherlands-based organization Conclusion, which has an ecosystem of over 25 companies and 3,600 employees, we are focused on increasing the technological capacity of our clients and the digital transformation of their application ecosystems. \r\n\r\nWe are talent specialists, attracting the best people and combining them with the needs of the most ambitious projects, at the right time. Our success comes from our investments in innovation, our focus on results, and, above all, the guarantee that our people will have happy and rewarding careers.\r\n\r\nWith over 25 years of solid experience, Neotalent Conclusion has established its presence in key locations, including Lisbon, Porto, and Madrid. The company currently has more than 950 professionals in the different areas in which it operates.\r\nNeotalent, the responsive people.\r\n\r\nFind out more about us at www.neotalent.pt.",
+                "address": "Av. D. João II, nº34, Parque das Nações\r\n1998-031 Lisboa",
+                "email": "talentos@neotalent.pt",
+                "url": "https://www.neotalent.pt/pt/",
+                "url_facebook": "https://www.facebook.com/NeotalentConclusion",
+                "url_linkedin": "https://www.linkedin.com/company/neotalentconclusion/",
+                "slug": "neotalent"
+            },
+            "companyId": 6466,
+            "title": "OSS & Network Analyst Core",
+            "body": "<p><strong>Who are we:</strong></p><p>Neotalent Conclusion is one of the leading Iberian specialists providing services in Information Technology and Engineering services. As part of the Netherlands-based organization Conclusion, which has an ecosystem of over 25 companies and 3,600 employees, we are focused on increasing the technological capacity of our clients and the digital transformation of their application ecosystems.</p><p>We are talent specialists, attracting the best people and combining them with the needs of the most ambitious projects, at the right time. Our success comes from our investments in innovation, our focus on results, and, above all, the guarantee that our people will have happy and rewarding careers.</p><p>With over 25 years of solid experience, Neotalent Conclusion has established its presence in key locations, including Lisbon, Porto, and Madrid. The company currently has more than 950 professionals in the different areas in which it operates.</p><p><em>Neotalent, the responsive people.</em></p><p><em>Find out more about us at <a href=\"http://www.neotalent.pt/\">www.neotalent.pt.</a></em></p><p><strong>Role Overview:</strong></p><p>We are looking for an<strong> OSS &amp; Network Analyst Core</strong> to integrate one of our largest international partners in the telecommunications sector. It is one of the biggest references in the area, with a significant presence in more than 6 countries. <strong>(Oporto/Lisbon - Hybrid model).</strong></p><p><strong>What you are like:</strong></p><ul><li>At least 2 years of experience as a<strong> OSS &amp; Network Analyst</strong>;</li><li>Experience producing technical/functional design documentation.</li><li><strong>Hands-on experience with CORE network configuration </strong>across major vendors (e.g., Ericsson, Nokia, Huawei, and Samsung), working with associated OSS platforms (e.g., Ericsson CNIS, Huawei U2000 for Core, Nokia NetAct Core modules), including support for 2G, 3G, 4G, and 5G core network elements.</li><li>Comprehensive knowledge of CORE network configuration tasks, including: Node creation and parameter tuning (e.g., MME, SGSN, PGW, SGW, AMF, SMF); Integration of new network elements and expansion of existing one; Logical and physical interface provisioning (e.g., S1, S5/S8, N2/N3, Gi/NG interfaces); Support for network transformations like EPC to 5GC migrations, VoLTE/VoNR provisioning, and IP plan re-engineering; etc.</li><li>Excellent<strong> English language proficiency</strong>, both written and verbal.</li></ul><p><strong>Why join us</strong></p><ul><li>Work on challenging projects for big clients</li><li>Learn more about emerging technologies</li><li>Possibility of working remotely</li><li>Design your career plan</li><li>Access to continuous training and certifications</li><li>Evolve through our internal mobility program</li><li>… and much more!</li></ul><p><strong>To apply:</strong></p><p>Please send your CV to <a href=\"mailto:talent.pt@neotalentconclusion.com\">talent.pt@neotalentconclusion.com</a> with <strong>PBR_OSS</strong> in the email subject.</p>",
+            "ref": "PBR_OSS",
+            "allowRemote": false,
+            "wage": null,
+            "contracts": [
+                {
+                    "id": "2",
+                    "name": "Permanent"
+                }
+            ],
+            "locations": [
+                {
+                    "id": "18",
+                    "name": "Porto"
+                },
+                {
+                    "id": "14",
+                    "name": "Lisboa"
+                }
+            ],
+            "publishedAt": "2025-11-14 21:55:40",
+            "updatedAt": "2025-11-14 21:55:40",
+            "slug": "oss-network-analyst-core"
+        },
+        {
+            "id": 506954,
+            "company": {
+                "id": 4598,
+                "name": "KWAN",
+                "logo": "https://static.itjobs.pt/images/companies/85/e55/4598/logo.png",
+                "description": "Parte do grupo Rupeal, a Kwan é uma empresa de IT Staffing especializada na arte da realização profissional, assegurando que quem trabalha connosco, sejam clientes, candidatos ou consultores, está no caminho certo para alcançar as suas motivações!",
+                "address": "Avenida Duque de Ávila, 46 - 3ºA\r\n1050 - 083 Lisboa",
+                "url": "http://www.kwan.pt/",
+                "url_twitter": "https://twitter.com/kwancommunity",
+                "url_facebook": "https://www.facebook.com/KWANcommunity/",
+                "url_linkedin": "https://www.linkedin.com/company/kwan-love-respect-community",
+                "slug": "kwan"
+            },
+            "companyId": 4598,
+            "title": "Backend Data Developer",
+            "body": "<p>We are looking for a Backend Engineer to work fully remote in Portugal who's eager to embark on an exciting new opportunity! Apply here <a href=\"https://tinyurl.com/48zs96rn\">https://tinyurl.com/48zs96rn</a></p><p>About KWAN<br />We connect IT professionals with projects that match their skills, professional experience, and goals, then we offer a career progression program, delivered by in-house specialists - our People Experience Partners - to guide them through our journey with us.</p><p> What is this challenge about: </p><ul><li>Design, develop, and maintain backend services and APIs for complex enterprise SaaS applications;</li><li>Implement GraphQL APIs, integrate third-party services, and work with data stores (e.g., MongoDB) for document, search, and vector data;</li><li>Collaborate with data, frontend, and infrastructure teams to deliver end-to-end features;</li><li>Write high-quality, maintainable code primarily in TypeScript and Python;</li><li>Optimize backend systems for performance, scalability, and reliability;</li><li>Build and maintain automated test frameworks to ensure code quality;</li><li>Monitor and troubleshoot backend services, resolve production issues, and participate in on-call support when required;</li><li>Document architecture, processes, and best practices to ensure maintainability and team alignment.</li></ul><p>Does it sound exciting? Apply now!<strong> </strong> <a href=\"https://bit.ly/3vVXjGa\">https://bit.ly/3vVXjGa</a></p><p>What we are looking for:</p><ul><li>+6 years of experience as a backend engineer;</li><li>Proven experience building and maintaining backend services and APIs for large-scale, enterprise SaaS applications;</li><li>Proficiency in TypeScript and Python, with experience developing and exposing APIs (GraphQL or REST);</li><li>Hands-on experience with databases, preferably MongoDB or similar document-oriented systems;</li><li>Familiarity with cloud-based architectures (AWS, Azure, or GCP) and related backend services such as Lambdas, containers, and messaging systems;</li><li>Understanding of software engineering fundamentals, systems architecture, and security best practices;</li><li>Experience with automated testing frameworks and CI/CD pipelines;</li><li>Fast learner, adaptable to new technologies and evolving requirements;</li><li>Clear communicator and effective collaborator with cross-functional teams;</li><li>Strong ownership mindset, taking responsibility for the quality and reliability of delivered solutions;</li><li>Fluency in English (minimum B2).</li></ul><p>Nice to have</p><ul><li>Experience integrating AI frameworks (e.g., LangChain, LangGraph) into backend systems;</li><li>Exposure to building and maintaining production data pipelines;</li><li>Experience working in high-growth or product-focused SaaS companies;</li><li>Familiarity with monitoring, logging, and alerting for distributed systems.</li></ul><p>Do you meet most of the position requirements? Then grab this opportunity and apply now! <a href=\"https://tinyurl.com/48zs96rn\">https://tinyurl.com/48zs96rn</a></p><p>What we offer</p><ul><li>A project that matches your skills and ambitions, as well as your preferences for working policies and culture;</li><li>A competitive salary with awesome benefits and opportunities to leverage your knowledge and network to earn additional income;</li><li>An empowering and respectful work culture enriched with social and learning events;</li><li>A People Experience Partner specially assigned to you - your go-to career guide, responsible for supporting your growth, facilitating training, and ensuring your work-life balance at KWAN.</li></ul><p>Some Words From Our Colleagues<br />“At KWAN, they make sure that I feel comfortable with the client I’m working for and that what I’m doing aligns with my career aspirations.” - Luis Caldeira, DevOps @ KWAN</p><p>Does it sound exciting? Apply now! <a href=\"https://tinyurl.com/48zs96rn\">https://tinyurl.com/48zs96rn</a></p>",
+            "ref": "",
+            "allowRemote": true,
+            "wage": null,
+            "publishedAt": "2025-11-14 21:55:35",
+            "updatedAt": "2025-11-14 21:55:35",
+            "slug": "backend-data-developer"
+        }
+    ]
+}
